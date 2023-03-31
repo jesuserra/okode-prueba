@@ -1,0 +1,19 @@
+<div class="container">
+    <div class="search">
+        <h1>Busca tus películas favoritas</h1>
+        <form (ngSubmit)="onSubmit(search)">
+            <input type="text" [(ngModel)]="search" name="search" class="search" placeholder="Search">
+        </form>
+    </div>
+</div>
+<div class="movies">
+    <ul>
+        <div *ngFor="let movie of movies" class="movie">
+            <li>
+                <a [routerLink]="['/movie', movie.id]">
+                    {{ movie.title }}
+                </a>
+            </li>
+        </div>
+    </ul>
+</div>

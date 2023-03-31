@@ -1,0 +1,16 @@
+<div class="container">
+    <div class="cont-left">
+        <h1>{{ movie?.title }}</h1>
+        <img [src]="imgUrl" alt="Poster de la película">
+    </div>
+    <div class="cont-right">
+        <h3><b>Fecha estreno: </b></h3>
+        <p>{{ movie?.release_date }}</p>
+        <h3><b>Idioma original: </b></h3>
+        <p>{{ language }}</p>
+        <h3><b>Puntuación: </b></h3>
+        <p>{{ movie?.vote_average }}/10</p>
+        <h3><b>Resumen:</b></h3>
+        <p>{{ movie?.overview }}</p>
+    </div>
+</div>
